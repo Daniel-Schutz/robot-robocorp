@@ -111,7 +111,7 @@ def embed_screenshot_to_receipt(screenshot, pdf_file):
 
 
 def archive_receipts():
-    folder_path = r'C:\Users\danie\Doxci2\Robocorp\course2\output'
+    folder_path = '/output'
     zip_file_name = os.path.join(
         folder_path, 'receipts.zip')  # Save inside the folder
     with zipfile.ZipFile(zip_file_name, 'w', zipfile.ZIP_DEFLATED) as zipf:
